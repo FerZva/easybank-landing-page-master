@@ -1,1 +1,25 @@
 @use 'Variables';
+
+//Font API
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+.Container {
+    font-family: 'Public Sans', sans-serif;
+}
+
+// Default styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p, a, span, label {
+    font-size: Variables.$f-size;
+}
+
+.Container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 1.5rem;
+}
