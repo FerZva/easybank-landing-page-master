@@ -1,3 +1,55 @@
 @use 'Default';
 @use 'Variables';
 
+.Container {
+
+    background-color: beige;
+
+    &_header {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        padding: 1.5rem;
+        background: Variables.$White;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &_nav-right {
+            position: fixed;
+            padding: 50px;
+            width: 90%;
+            background-color: Variables.$White;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 26.8%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 5px;
+
+            &_a {
+                display: flex;
+                justify-content: center;
+                text-decoration: none;
+                color: dimgray;
+                margin: 10px;
+            }
+        }
+
+        &_menu-btn {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        &_close-btn {
+            cursor: pointer;
+            display: none;
+        }
+
+        &_invite-btn {
+            display: none;
+        }
+    }
+}

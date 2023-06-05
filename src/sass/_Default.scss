@@ -19,7 +19,9 @@ p, a, span, label {
 }
 
 .Container {
+    margin: auto;
     width: 100%;
+    max-width: 1920px;
     min-height: 100vh;
-    padding: 1.5rem;
+    padding: 0 1.5rem;
 }

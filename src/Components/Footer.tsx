@@ -6,6 +6,7 @@ import youtube from '../images/images/icon-youtube.svg';
 import twitter from '../images/images/icon-twitter.svg'
 import Pinterest from '../images/images/icon-pinterest.svg'
 import Instagram from '../images/images/icon-instagram.svg'
+import InviteBtn from './InviteBtn';
 
 function Footer() {
   return (
@@ -26,7 +27,7 @@ function Footer() {
         <a href="#">Support</a>
         <a href="#">Privccy Policy</a>
       </nav>
-      <button>Request Invite</button>
+      <InviteBtn />
       <div>
         <p>© Easybank. All Rights Reserved</p>
       </div>

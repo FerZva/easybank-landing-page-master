@@ -1,5 +1,6 @@
 import React from 'react'
 import Mockups from '../images/images/image-mockups.png'
+import InviteBtn from './InviteBtn.jsx';
 
 function Introduction() {
   return (
@@ -10,7 +11,7 @@ function Introduction() {
         <p>
           Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing and much more
         </p>
-        <button>Request Invite</button>
+        <InviteBtn/>
       </div>
       {/* Image */}
       <div>
