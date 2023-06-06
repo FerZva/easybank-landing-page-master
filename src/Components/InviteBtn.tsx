@@ -2,8 +2,8 @@ import React from 'react'
 
 function InviteBtn() {
   return (
-    <button>
-        Request Invite
+    <button className='btn'>
+        <span className='btn-text'>Request Invite</span>
     </button>
   )
 }

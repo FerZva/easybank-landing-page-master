@@ -16,6 +16,8 @@
 
 p, a, span, label {
     font-size: Variables.$f-size;
+    line-height: 1.7rem;
+    color: Variables.$Grayish-Blue;
 }
 
 .Container {
@@ -23,5 +25,34 @@ p, a, span, label {
     width: 100%;
     max-width: 1920px;
     min-height: 100vh;
-    padding: 0 1.5rem;
+    padding: 0;
+}
+
+.btn {
+    background: linear-gradient(90deg, Variables.$Lime-Green 0%, Variables.$Bright-Cyan 100%);
+    border: none;
+    color: Variables.$White;
+    padding: 10px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+
+    &-text {
+        color: Variables.$Very-Light-Gray;
+    }
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 45px;
+    font-weight: 300;
+    text-align: center;
+    color: Variables.$Dark-Blue;
+}
+
+h3 {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    color: Variables.$Dark-Blue;
 }

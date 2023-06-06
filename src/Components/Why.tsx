@@ -29,14 +29,16 @@ const features = [
 
 const Why = () => {
   return (
-    <div>
+    <div className='Container_benefits-container'>
+      <h2>Why choose Easybank?</h2>
+      <p>We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before</p>
       {features.map((feature, index) => {
         const { image, title, description } =  feature;
         return (
-          <div key={ index }>
-            <img src={image} alt="" />
-            <h3> { title } </h3>
-            <p> { description } </p>
+          <div className='Container_benefits-container_benefit' key={ index }>
+            <img className='Container_benefits-container_benefit_icon' src={image} alt="" />
+            <h3 className='Container_benefits-container_benefit_title'> { title } </h3>
+            <p className='Container_benefits-container_benefit_description'> { description } </p>
           </div>
         );
       })}

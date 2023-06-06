@@ -37,6 +37,7 @@ const articles = [
 const Articles = () => {
   return (
     <div>
+      <h2>Latest Articles</h2>
       {articles.map((article, index) => {
         const { image, author, title, description } = article;
         return (

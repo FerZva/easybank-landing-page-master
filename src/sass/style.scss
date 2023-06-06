@@ -3,7 +3,9 @@
 
 .Container {
 
-    background-color: beige;
+    /*                   */
+    /*    Header Styles  */
+    /*                   */
 
     &_header {
         position: fixed;
@@ -38,6 +40,7 @@
         }
 
         &_menu-btn {
+            align-self: center;
             &:hover {
                 cursor: pointer;
             }
@@ -50,6 +53,79 @@
 
         &_invite-btn {
             display: none;
+        }
+    }
+
+    /*                   */
+    /*    Main Styles    */
+    /*                   */
+
+    &_main-container {
+        display: flex;
+        flex-direction: column;
+
+        &_description {
+            order: 2;
+            padding: 40px;
+            text-align: justify;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+            &_title {
+                
+            }
+
+            &_paragraph {
+                margin-bottom: 30px;
+                color: Variables.$Grayish-Blue;
+                
+            }
+        }
+
+        &_poster {
+            order: 1;
+            background-image: url(Variables.$Main-Background-Mobile);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            &_img {
+                margin-top: 7rem;
+                width: 100%;
+            }
+        }
+    }
+
+     /*                   */
+     /*    Why styles     */
+     /*                   */
+
+    &_benefits-container {
+        padding: 3rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: Variables.$Light-Grayish-Blue;
+
+        &_benefit {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            
+            &_icon {
+                margin: 20px auto;
+            }
+
+            &_title {
+                margin-bottom: 20px;
+            }
+
+            &_description {
+                margin-bottom: 40px;
+            }
         }
     }
 }
