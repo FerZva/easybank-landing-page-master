@@ -36,20 +36,22 @@ const articles = [
 
 const Articles = () => {
   return (
-    <div>
-      <h2>Latest Articles</h2>
+    <section className="Container_articles-section">
+      <h2 className="Container_articles-section_title">Latest Articles</h2>
       {articles.map((article, index) => {
         const { image, author, title, description } = article;
         return (
-          <div key={index}>
-            <img src={image} alt="" />
-            <span> {author} </span>
-            <h3> {title} </h3>
-            <p> {description} </p>
+          <div className="Container_articles-section_article-card" key={index}>
+            <img className="Container_articles-section_article-card_img" src={image} alt="" />
+            <div className="Container_articles-section_article-card_description">
+              <span className="Container_articles-section_article-card_description_author"> {author} </span>
+              <h3 className="Container_articles-section_article-card_description_title"> {title} </h3>
+              <p className="Container_articles-section_article-card_description_text"> {description} </p>
+            </div>
           </div>
         );
       })}
-    </div>
+    </section>
   );
 }
 

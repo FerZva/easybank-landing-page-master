@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Header from './Components/Header.tsx';
 import Introduction from './Components/Introduction.tsx';
 import Articles from './Components/Articles.tsx';
-import Why from './Components/Why.tsx';
+import Why from './Components/Benefits.tsx';
 import Footer from './Components/Footer.tsx'
 import  "./sass/style.scss";
 
